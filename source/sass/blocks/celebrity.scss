@@ -1,8 +1,16 @@
 .celebrity {
   padding: 18.6rem 0 0;
 
+  @media (max-width: $mobile) {
+    padding: 94px 0 0;
+  }
+
   &__title {
     margin: 0 0 6.5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 34px;
+    }
   }
 
   .container {

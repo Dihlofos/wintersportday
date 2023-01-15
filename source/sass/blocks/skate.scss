@@ -1,8 +1,27 @@
 .skate {
   padding: 18.5rem 0 0;
 
+  @media (max-width: $mobile) {
+    padding: 84px 0 0;
+  }
+
   &__title {
     margin: 0 0 6.5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0;
+    }
+  }
+
+  &__blocks-container {
+    @media (max-width: $mobile) {
+      user-select: none;
+
+      &.container {
+        padding: 0;
+        margin: -23px 0 0;
+      }
+    }
   }
 
   &__blocks {
@@ -12,12 +31,35 @@
     padding: 0;
     margin: 0;
     gap: 4rem;
+
+    @media (max-width: $mobile) {
+      position: relative;
+      flex-wrap: nowrap;
+      width: 100%;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow-x: auto;
+      padding: 60px 20px 0 20px;
+      gap: 20px;
+
+      &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 0;
+        height: 0;
+        display: none;
+      }
+    }
   }
 
   &__block {
     position: relative;
     width: 32rem;
     height: 43.4rem;
+
+    @media (max-width: $mobile) {
+      height: 434px;
+      width: 100%;
+    }
   }
 
   &__block-card {
@@ -30,6 +72,20 @@
     overflow: hidden;
     background-color: $blue;
     height: 100%;
+
+    .button {
+      width: 25.8rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 50px 23px 55px 28px;
+      width: 320px;
+      //width: 335px;
+
+      .button {
+        width: 258px;
+      }
+    }
 
     &--image-only {
       padding: 0;
@@ -57,11 +113,22 @@
     &--two-lines {
       min-height: initial;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      margin: 0 0 20px;
+      min-height: initial;
+    }
   }
 
   &__block-description {
     font-size: 2rem;
     line-height: 1.2;
+
+
+    @media (max-width: $mobile) {
+      font-size: 20px;
+    }
   }
 
   &__block-count {
@@ -70,6 +137,11 @@
     margin: 0 0 3rem;
     color: $lightBlue;
     font-weight: 400;
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      margin: 0 0 30px;
+    }
   }
 
   &__instructor-photo {
@@ -80,6 +152,13 @@
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
+
+    @media (max-width: $mobile) {
+      top: -60px;
+      right: 0;
+      width: 120px;
+      height: 120px;
+    }
   }
 
 }

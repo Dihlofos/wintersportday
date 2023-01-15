@@ -5,7 +5,7 @@
     }
 
     @media (max-width: $mobile) {
-      margin: 0 0 0 20px;
+      margin: 0 ;
     }
 
 
@@ -17,13 +17,13 @@
         width: 31.8rem !important;
         height:  39.1rem !important;
 
-        &:last-child {
-          width: calc((100% - 140rem)/2)  !important;
-        }
-
       @media (max-width: $mobile) {
-        width: 334px !important;
-        height: 430px !important;
+        width: 100% !important;
+        height: auto !important;
+
+        &:last-child {
+          width: 100% !important;
+        }
       }
     }
 
@@ -33,18 +33,33 @@
       height: 100%;
       text-align: center;
 
+      @media (max-width: $mobile) {
+        width: 280px;
+        height: 100%;
+        margin: 0 auto;
+      }
+
       h5 {
         margin: 2.7rem 0 0.3rem;
         font-size: 2rem;
         line-height: 1.2;
         text-transform: uppercase;
         font-weight: 700;
+
+        @media (max-width: $mobile) {
+          font-size: 20px;
+          margin: 22px 0 5px;
+        }
       }
 
       p {
         font-size: 1.6rem;
         line-height: 1.2;
         margin: 0;
+
+        @media (max-width: $mobile) {
+          font-size: 16px;
+        }
       }
 
       img {
@@ -66,6 +81,12 @@
       top: 0;
       padding: 14rem 0 0;
 
+      @media (max-width: $mobile) {
+        width: 24px;
+        height: 280px;
+        padding: 123px 0 0;
+      }
+
       svg {
         fill: $white;
       }
@@ -74,11 +95,20 @@
     .swiper__prev {
       left: 0;
       justify-content: flex-end;
+      z-index: 5;
+
+      @media (max-width: $mobile) {
+        left: 20px;
+      }
     }
 
     .swiper__next {
       right: 0;
       justify-content: flex-start;
+      z-index: 5;
+      @media (max-width: $mobile) {
+        right: 20px;
+      }
     }
 
 
