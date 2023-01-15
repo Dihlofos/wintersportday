@@ -1,0 +1,27 @@
+.marquee {
+  position: relative;
+  height: 75px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    top: 0;
+    left: -5%;
+  }
+
+  &--blue {
+    &:after {
+      background-image: url(../../img/marquee-blue-texture.png);
+      background-repeat: repeat;
+    }
+  }
+
+  &--red {
+    &:after {
+      background-image: url(../../img/marquee-red-texture.png);
+      background-repeat: repeat;
+    }
+  }
+}

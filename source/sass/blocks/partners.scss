@@ -1,0 +1,68 @@
+.partners {
+  padding: 21.2rem 0 0;
+
+  &__title {
+    margin: 0 0 6.5rem;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-hover {
+    max-width: initial;
+    opacity: 0;
+    width: 25.7rem;
+    height: 25.7rem;
+    position: absolute;
+    top: -7rem;
+    left: -6.5rem;
+    transition: 0.2s opacity ease-in-out;
+    z-index: 0;
+
+    .partners__logo--dep & {
+      top: -6rem;
+      left: -3rem;
+    }
+
+    .partners__logo--sport & {
+      top: -6rem;
+      left: -1rem;
+    }
+
+    .partners__logo--100 & {
+      top: -6rem;
+      left: -3rem;
+    }
+
+    .partners__logo--mountains & {
+      top: -6rem;
+      left: 0;
+    }
+
+    .partners__logo--run & {
+      top: -6rem;
+      left: 0;
+    }
+  }
+
+  &__logo {
+    position: relative;
+
+    &:hover {
+      .partners__logo-hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__logo-image {
+    position: relative;
+    z-index: 5;
+  }
+
+
+
+}

@@ -1,0 +1,30 @@
+.header {
+
+
+  &__content {
+    padding: 4.9rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__logos {
+    display: flex;
+    gap: 5rem;
+  }
+
+  &__logo {
+    transition: 0.2s color ease-in;
+
+    svg {
+      fill: currentColor;
+    }
+
+    &:hover {
+      color: $lightBlue;
+    }
+  }
+
+
+}

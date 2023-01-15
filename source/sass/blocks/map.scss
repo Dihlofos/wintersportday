@@ -1,0 +1,172 @@
+.map {
+  padding: 16.5rem 0 0;
+
+
+  &__title {
+    margin: 0 0 1.5rem;
+  }
+
+  &__description {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__map {
+    position: relative;
+    width: 123.2rem;
+    height: 78.9rem;
+    margin: -10.6rem 0 0;
+  }
+
+  &__marquee {
+    margin: 19.5rem 0 0;
+    transform: rotate(-6deg);
+  }
+
+  &__pin {
+    position: absolute;
+    height: 4.2rem;
+    width: auto;
+    color: $white;
+    border-radius: 15px;
+    background-color: $white;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 4.2rem;
+      height: 4.2rem;
+      background: $lightBlue;
+      opacity: 0.5;
+      border-radius: 15px;
+      animation-name: map-pulse;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      z-index: 1;
+    }
+
+    &.open {
+      &:after {
+        display: none;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      height: 20px;
+
+      &:after {
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+
+
+    &--1 {
+      top: 43%;
+      left: 18%;
+    }
+
+    &--2 {
+      top: 43%;
+      left: 32%;
+    }
+
+    &--3 {
+      top: 58%;
+      left: 29%;
+    }
+
+    &--4 {
+      top: 6%;
+      left: 38%;
+    }
+  }
+
+  &__number {
+    font-family: $mossport;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.2rem;
+    height: 4.2rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    border-radius: 15px;
+    flex-shrink: 0;
+    background-color: $lightBlue;
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3.1rem 0 6rem;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    height: 4.2rem;
+    border-radius: 15px;
+    background-color: $white;
+    z-index: 1;
+    text-transform: uppercase;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in;
+    transform-origin: 2.1rem 0;
+    line-height: 1;
+    color: $blue;
+    font-weight: 700;
+
+    @media (max-width: $mobile) {
+      height: 20px;
+      padding: 0 10px 0 25px;
+      transform-origin: 5px 0;
+      font-size: 8px;
+      line-height: 1;
+
+    }
+
+    span {
+      opacity: 0;
+      transition: opacity 0.1s ease-in;
+      transition-delay: 0.3s;
+      line-height: 1;
+
+    }
+
+    .open & {
+      transform: scaleX(1);
+
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
+
+}

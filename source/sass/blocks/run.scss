@@ -1,0 +1,67 @@
+.run {
+  padding: 20.7rem 0 0;
+
+  &__title {
+    margin: 0 0 6.5rem;
+  }
+
+  &__image {
+    border-radius: 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding: 3rem 0 0;
+    width: 34%;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  &__schedule {
+    width: 48.5%;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  &__schedule-time {
+    display: inline-block;
+    margin: 0 5.1rem 0 0;
+  }
+
+  &__count {
+    font-size: 2rem;
+    color: $lightBlue;
+    font-weight: 700;
+    margin: 2rem 0 0;
+  }
+
+  &__button {
+    width: 25.8rem;
+    margin: 6rem 0 0;
+  }
+
+  &__schedule {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__schedule-item {
+    font-weight: 700;
+    padding: 3rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $white;
+    }
+
+  }
+
+}
