@@ -1,4 +1,190 @@
-.about {
+.about{
+  padding: 12rem 0 0;
 
+  @media (max-width: $mobile) {
+    padding: 46px 0 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    gap: 7.5rem;
+    align-items: flex-start;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__ornament {
+    position: absolute;
+    top: -0.3rem;
+    left: -0.8rem;
+    width: 37rem;
+    height: 37rem;
+    border-radius: 50%;
+    background-image: url('../../img/infoblock-texture.png');
+    background-repeat: repeat;
+    background-color: $red;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: flex-end;
+    width: 46%;
+    position: relative;
+
+    @media (max-width: $mobile) {
+      width: 450px;
+      height: 450px;
+      padding-bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      height: auto;
+      padding-bottom: 100%;
+    }
+
+
+  }
+
+  &__picture {
+    position: relative;
+    width: 41.7rem;
+    height: 41.7rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 2.2rem 0 0;
+
+    @media (max-width: $mobile) {
+      top: 20px;
+      left: 20px;
+      margin: 0;
+      position: absolute;
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+    }
+
+    img,
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__image {
+    cursor: pointer;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__image-bg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    color: $white;
+    transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+    z-index: 5;
+
+    &:hover {
+      color: $red;
+      background-color: rgba(0,0,0,0.3);
+
+      @media (max-width: $mobile) {
+        color: $white;
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+
+    &:active {
+      color: $red;
+      background-color: rgba(0,0,0,0.4);
+
+      @media (max-width: $mobile) {
+        color: $white;
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+  }
+
+  &__video {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    padding: 7rem 0 0;
+    width: 52rem;
+
+    h4 {
+      text-transform: uppercase;
+      font-family: $mossport;
+      font-weight: 700;
+      font-size: 4.7rem;
+      line-height: 1.2;
+      margin: 0 0 1.6rem;
+
+    }
+
+    p {
+      margin: 0 0 1.6rem;
+      font-size: 2rem;
+      line-height: 2.4rem;
+
+
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding: 28px 0 0;
+
+      h4 {
+        font-size: 30px;
+        margin: 0 0 15px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 0px 0 8px;
+      }
+
+    }
+  }
+
+  &__marquee {
+    margin: 14rem 0 0;
+    transform: rotate(-4deg);
+
+    @media (max-width: $mobile) {
+      margin: 88px 0 0;
+    }
+  }
 
 }

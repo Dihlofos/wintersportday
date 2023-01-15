@@ -1,4 +1,114 @@
 .footer {
+  padding: 0 0 7rem;
+  position: relative;
+  background-color: $blue;
+  margin: -2.6rem 0 0;
+
+  &__title {
+    margin: 0 0 4.5rem;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 4;
+  }
+
+  &__bg {
+    position: absolute;
+    top: -6rem;
+    left: -2%;
+    width: 105%;
+    height: 20rem;
+    background-color: $blue;
+    transform: rotate(4.92deg);
+    z-index: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80.5%;
+  }
+
+  &__smi {
+    max-width: 51.3rem;
+
+    ul {
+      padding-left: 2.7rem;
+    }
+  }
+
+  &__content {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin: 0 0 3.8rem;
+    text-transform: uppercase;
+  }
+
+  &__press-link {
+    display: inline-block;
+    padding: 0 0 1.5rem;
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 0 2.1rem;
+    color: $lightBlue;
+    border-bottom: 2px solid $lightBlue;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem 0 3rem;
+  }
+
+  &__pins {
+    color: $white;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+
+  &__pin-icon {
+    display: flex;
+    width: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.3rem 0 0;
+  }
+
+  &__pin {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2.5rem;
+  }
+
+  &__policy-link {
+    display: inline-block;
+    color: $lightBlue;
+    padding: 0 0 0.5rem;
+    text-decoration: none;
+    border-bottom: 1px solid $lightBlue;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 
 
 }

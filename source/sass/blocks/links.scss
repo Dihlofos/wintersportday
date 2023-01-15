@@ -1,7 +1,9 @@
 .links {
   padding: 19rem 0 0;
 
-
+  @media (max-width: $mobile) {
+    padding: 62px 0 0;
+  }
 
   &__list {
     list-style: none;
@@ -9,6 +11,13 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 21px;
+    }
   }
 
   &__link {
@@ -22,6 +31,11 @@
     line-height: 4.5rem;
     transition: 0.15s color ease-in-out;
 
+    @media (max-width: $mobile) {
+      font-size: 28px;
+      line-height: 20px;
+    }
+
     &:hover {
       color: $red;
     }
@@ -34,10 +48,27 @@
   &__link-text {
     margin: 0 0.5rem 0 0;
     white-space: nowrap;
+
+    @media (max-width: $mobile) {
+      margin: 0 3px 0 2px;
+    }
+  }
+
+  &__main-icon {
+    @media (max-width: $mobile) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__arrow {
+    @media (max-width: $mobile) {
+      width: 10px;
+      height: 10px;
+    }
   }
 
   &__marquee {
-    width: calc(100% + 4rem);
     height: 6.9rem;
     margin: 20.2rem -2rem 0;
     background-color: $red;
@@ -50,6 +81,21 @@
     font-weight: 700;
     transform: rotate(4deg);
     letter-spacing: 0.1rem;
+
+    span {
+      position: relative;
+      z-index: 6;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 60px 0 0;
+      font-size: 14px;
+      line-height: 1.4;
+      height: 64px;
+      text-align: center;
+
+
+    }
 
   }
 

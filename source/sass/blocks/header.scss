@@ -1,5 +1,10 @@
 .header {
 
+  &__nav {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
 
   &__content {
     padding: 4.9rem 0 0;
@@ -7,6 +12,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+
+    @media (max-width: $mobile) {
+      padding: 30px 0 0;
+    }
   }
 
   &__logos {

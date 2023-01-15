@@ -4,65 +4,39 @@
   &__wrapper {
     position: relative;
     display: flex;
-    gap: 7.5rem;
+    gap: 6.4rem;
     align-items: flex-start;
-
-    &--exhibit {
-      gap: 6.4rem;
-    }
   }
 
   &__ornament {
     position: absolute;
-    top: -0.3rem;
-    left: -0.8rem;
-    width: 37rem;
-    height: 37rem;
+    right: 0;
+    bottom: 2.4rem;
+    width: 34rem;
+    height: 34rem;
     border-radius: 50%;
     background-image: url('../../img/infoblock-texture.png');
     background-repeat: repeat;
     background-color: $red;
-
-    &--right {
-      top: auto;
-      left: auto;
-      right: 0;
-      bottom: 2.4rem;
-      width: 34rem;
-      height: 34rem;
-    }
   }
 
   &__images {
     display: flex;
-    justify-content: flex-end;
-    width: 46%;
+    width: auto;
+    justify-content: flex-start;
+    padding: 7rem 0 0px;
 
-    &--exhibit {
-      width: auto;
-      justify-content: flex-start;
-      padding: 7rem 0 0px;
-    }
   }
 
   &__image {
     position: relative;
-    width: 41.7rem;
-    height: 41.7rem;
+    width: 45.9rem;
+    height: 45.9rem;
     overflow: hidden;
     border-radius: 50%;
 
-    &--exhibit {
-      width: 45.9rem;
-      height: 45.9rem;
-    }
 
-    &--video {
-      margin: 2.2rem 0 0;
-    }
-
-    img,
-    video {
+    img {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -75,43 +49,25 @@
 
   &__content {
     padding: 7rem 0 0;
-    width: 52rem;
+    width: 65.6rem;
 
     h4 {
       text-transform: uppercase;
       font-family: $mossport;
-      font-size: 4.7rem;
-      line-height: 1.2;
-      margin: 0 0 1.6rem;
+      font-weight: 700;
+      font-size: 6.4rem;
+      line-height: 1;
+      margin: 0 0 3.7rem;
     }
 
     p {
-      margin: 0 0 1.6rem;
+      margin: 0 0 5rem;
       font-size: 2rem;
       line-height: 2.4rem;
-    }
-
-    &--exhibit {
-      width: 65.6rem;
-
-      h4 {
-        font-size: 6.4rem;
-        line-height: 1;
-        margin: 0 0 3.7rem;
-      }
-
-      p {
-        margin: 0 0 5rem;
-      }
     }
   }
 
   &__marquee {
-    margin: 14rem 0 0;
-    transform: rotate(-4deg);
-  }
-
-  &__marquee--exhibit {
     margin: 21.5rem 0 0;
     transform: rotate(5.52deg);
   }

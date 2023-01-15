@@ -70,6 +70,35 @@
 
 "use strict";
 (function () {
+
+  const modal = document.querySelector('.js-modal');
+  const modalClose = document.querySelectorAll('.js-modal-close');
+  const modalOpen = document.querySelector('.js-modal-open');
+  const video = modal.querySelector('video');
+
+  if (!modalClose.length | !modal) {
+    return;
+  }
+
+  modalOpen.addEventListener('click', ()=>{
+    modal.classList.remove('visually-hidden');
+    modal.classList.remove('fadeOut');
+    modal.classList.add('fadeIn');
+    video.play();
+  })
+  modalClose.forEach((button) => {
+    button.addEventListener('click', ()=>{
+      modal.classList.add('fadeOut');
+      setTimeout(()=>{
+        modal.classList.add('visually-hidden');
+        video.pause();
+      },300)
+    })
+  })
+})();
+
+"use strict";
+(function () {
   new Swiper(".js-slider", {
     // Optional parameters
     loop: true,
@@ -131,8 +160,27 @@ function isTouchDevice() {
 })();
 
 (function () {
-  document.body.addEventListener("touchstart", function () {
-    var video = document.querySelector('video');
-    video.play();
-  },{ once: true });
+  const modileVideo = document.querySelector('.js-mobile-video');
+  const modileVideoButton = document.querySelector('.js-mobile-video-button');
+
+  modileVideoButton.addEventListener('click', () => {
+    modileVideoButton.classList.add('fadeOut');
+    setTimeout(()=>{
+      modileVideoButton.classList.add('visually-hidden');
+      modileVideo.play();
+    },300)
+  })
+
+  modileVideo.addEventListener('click', () => {
+    modileVideoButton.classList.remove('fadeOut');
+    modileVideoButton.classList.remove('visually-hidden');
+    modileVideoButton.classList.add('fadeIn');
+    setTimeout(()=>{
+      modileVideo.pause();
+    },300)
+  })
+
+
+
+
 })();

@@ -74,7 +74,7 @@
                   >
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link js-scroll" data-scroll href="#ice"
+                  <a class="nav__link js-scroll" data-scroll href="#skate"
                     >Каток</a
                   >
                 </li>
@@ -108,15 +108,18 @@
       </header>
 
       <main style="overflow: hidden">
+
         <section class="hero" id="hero">
           <div class="container">
             <div class="hero__top">
-              <h2 class="hero__title">Зимний день</h2>
-              <div class="hero__block hero__block--red">
-                Лужники, южное<br> спортивное ядро
-              </div>
-              <div class="hero__block hero__block--blue">
-                4 февраля 2023 г.<br>С 10:00 до 21:00
+              <h2 class="hero__title">Зимний день <img src="img/logo-ornamtent.svg" alt="Лого мосспорта"></h2>
+              <div class="hero__blocks">
+                <div class="hero__block hero__block--red">
+                  Лужники, южное<br> спортивное ядро
+                </div>
+                <div class="hero__block hero__block--blue">
+                  4 февраля 2023 г.<br>С 10:00 до 21:00
+                </div>
               </div>
             </div>
             <div class="hero__bottom">
@@ -125,18 +128,56 @@
             </div>
           </div>
         </section>
-        <section class="infoblock">
+        <section class="about" id="about">
+          <div class="modal js-modal visually-hidden">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__wrapper js-modal-wrapper">
+              <button class="modal__close js-modal-close">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_542_2141)">
+                  <rect x="20.8555" y="3.17773" width="2" height="25" transform="rotate(45 20.8555 3.17773)" fill="#A3DCF5"/>
+                  <rect x="21.8555" y="21.1777" width="2" height="25" transform="rotate(135 21.8555 21.1777)" fill="#A3DCF5"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_542_2141">
+                  <rect width="25" height="25" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="modal__content">
+                <video class="modal__video js-video-video" poster="img/infoblock-image2.jpg" inline controls  preload="auto">
+                  <source src="video/video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
           <div class="container">
-            <div class="infoblock__wrapper">
-              <div class="infoblock__images">
-                <div class="infoblock__ornament"></div>
-                <div class="infoblock__image infoblock__image--video">
-                  <video class=" js-video-video" poster="img/hero-video-image.jpg" muted inline autoplay loop playsinline defaultmuted preload="auto">
-                    <source src="video/desktop.mp4" type="video/mp4">
-                  </video>
+            <div class="about__wrapper">
+              <div class="about__images">
+                <div class="about__ornament"></div>
+                <div class="about__picture">
+                  <button class="about__image js-modal-open">
+                    <img src="img/infoblock-image2.jpg" alt="">
+                    <div class="about__image-bg">
+                      <svg class="about__image-play" width="59" height="80" role="img" aria-label="skate">
+                        <use xlink:href="img/sprite.svg#icon-play"></use>
+                      </svg>
+                    </div>
+                  </button>
+                  <div class="about__video">
+                    <button class="about__image-bg js-mobile-video-button">
+                      <svg class="about__image-play" width="59" height="80" role="img" aria-label="skate">
+                        <use xlink:href="img/sprite.svg#icon-play"></use>
+                      </svg>
+                    </button>
+                    <video class="js-mobile-video" poster="img/infoblock-image2.jpg" muted inline   loop playsinline defaultmuted preload="auto">
+                      <source src="video/video.mp4" type="video/mp4">
+                    </video>
+                  </div>
                 </div>
               </div>
-              <div class="infoblock__content">
+              <div class="about__content">
                 <h4>Большое событие для всех, кто начинает 2023 год активно</h4>
                 <p><b>Попробуйте</b> себя в&nbsp;новых видах спорта или&nbsp;покажите навыки в&nbsp;том, что уже знаете.</p>
                 <p><b>Познакомьтесь</b> со&nbsp;спортивными школами города.</p>
@@ -145,80 +186,80 @@
               </div>
             </div>
           </div>
-          <div class="marquee infoblock__marquee marquee--blue"></div>
+          <div class="marquee about__marquee marquee--blue"></div>
         </section>
         <section class="links">
           <div class="container">
             <ul class="links__list">
               <li class="links_item">
                 <a class="links__link" href="#">
-                  <svg width="45" height="45" role="img" aria-label="skate">
+                  <svg class="links__main-icon" width="45" height="45" role="img" aria-label="skate">
                     <use xlink:href="img/sprite.svg#icon-skate"></use>
                   </svg>
                   <span class="links__link-text">
                     Каток
                   </span>
-                  <svg width="19" height="19" role="img" aria-label="arrow">
+                  <svg class="links__arrow" width="19" height="19" role="img" aria-label="arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow-full"></use>
                   </svg>
                 </a>
               </li>
               <li class="links_item">
                 <a class="links__link" href="#">
-                  <svg width="45" height="45" role="img" aria-label="skate">
+                  <svg class="links__main-icon" width="45" height="45" role="img" aria-label="skate">
                     <use xlink:href="img/sprite.svg#icon-medal"></use>
                   </svg>
                   <span class="links__link-text">
                     Выставка
                   </span>
-                  <svg width="19" height="19" role="img" aria-label="arrow">
+                  <svg class="links__arrow" width="19" height="19" role="img" aria-label="arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow-full"></use>
                   </svg>
                 </a>
               </li>
               <li class="links_item">
                 <a class="links__link" href="#">
-                  <svg width="45" height="45" role="img" aria-label="skate">
+                  <svg class="links__main-icon" width="45" height="45" role="img" aria-label="skate">
                     <use xlink:href="img/sprite.svg#icon-running-man"></use>
                   </svg>
                   <span class="links__link-text">
                     Забег
                   </span>
-                  <svg width="19" height="19" role="img" aria-label="arrow">
+                  <svg class="links__arrow" width="19" height="19" role="img" aria-label="arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow-full"></use>
                   </svg>
                 </a>
               </li>
               <li class="links_item">
                 <a class="links__link" href="#">
-                  <svg width="45" height="45" role="img" aria-label="skate">
+                  <svg class="links__main-icon" width="45" height="45" role="img" aria-label="skate">
                     <use xlink:href="img/sprite.svg#icon-star"></use>
                   </svg>
                   <span class="links__link-text">
                     Гонка звезд
                   </span>
-                  <svg width="19" height="19" role="img" aria-label="arrow">
+                  <svg class="links__arrow" width="19" height="19" role="img" aria-label="arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow-full"></use>
                   </svg>
                 </a>
               </li>
               <li class="links_item">
                 <a class="links__link" href="#">
-                  <svg width="45" height="45" role="img" aria-label="skate">
+                  <svg class="links__main-icon" width="45" height="45" role="img" aria-label="skate">
                     <use xlink:href="img/sprite.svg#icon-pin"></use>
                   </svg>
                   <span class="links__link-text">
                     Фристайл
                   </span>
-                  <svg width="19" height="19" role="img" aria-label="arrow">
+                  <svg class="links__arrow" width="19" height="19" role="img" aria-label="arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow-full"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="marquee links__marquee">
-            Выбирайте | регистрируйтесь и приходите | Вход бесплатный
+          <div class="marquee links__marquee marquee--red-flat">
+            <span>Выбирайте | регистрируйтесь и&nbsp;приходите | Вход бесплатный</span>
           </div>
         </section>
         <section class="skate" id="skate">
@@ -430,26 +471,26 @@
 
 
         </section>
-        <section class="infoblock">
+        <section class="infoblock" id="exhibit">
           <div class="container">
-            <div class="infoblock__wrapper infoblock__wrapper--exhibit">
-              <div class="infoblock__content infoblock__content--exhibit">
-                <h2>Выставка московских академий<br>зимних видов спорта</h2>
+            <div class="infoblock__wrapper">
+              <div class="infoblock__content">
+                <h4>Выставка московских академий<br>зимних видов спорта</h4>
                 <p>Выставка академий города, на которой разместятся стенды ведущих спортивных учреждений Москвы. Здесь вы узнаете об их спортивных направлениях, достижениях выпускников, правилах записи. А также сможете пообщаться
                   с представителями учреждений.</p>
                 <span class="button button--free">Вход свободный</span>
               </div>
-              <div class="infoblock__images infoblock__images--exhibit">
-                <div class="infoblock__ornament infoblock__ornament--right"></div>
-                <div class="infoblock__image infoblock__image--exhibit">
+              <div class="infoblock__images">
+                <div class="infoblock__ornament"></div>
+                <div class="infoblock__image">
                   <img width="459" height="459" src="img/infoblock-image2.jpg" alt="Выставка">
                 </div>
               </div>
             </div>
           </div>
-          <div class="marquee marquee--blue infoblock__marquee--exhibit"></div>
+          <div class="marquee infoblock__marquee marquee--blue"></div>
         </section>
-        <section class="run">
+        <section class="run" id="run">
           <div class="container">
             <h2 class="run__title title">Зимний забег</h2>
             <img class="run__image" width="1400" height="473" src="img/run-image.jpg" alt="" >
@@ -490,7 +531,7 @@
           </div>
 
         </section>
-        <section class="map">
+        <section class="map" id="map">
           <div class="container">
             <div class="map__header">
               <h2 class="title map__title">карта с локациями</h2>
@@ -561,11 +602,16 @@
             <div class="faq__accordeon">
               <div class="faq__item" style="animation-delay: 0.2s;">
                 <button class="faq__toggler js-faq-toggler">
-                  Кто может попасть на фестиваль?
-                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
-                    <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
+                  могут ли принимать участие в активностях дети?
+                  <div class="faq__icon">
+                    <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
+                    <svg class="faq__minus" width="30" height="5" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-minus"></use>
+                    </svg>
+                  </div>
+
                 </button>
                 <div class="faq__content">
                   Вход на&nbsp;фестиваль бесплатный. Площадка открыта для всех желающих.
@@ -573,11 +619,15 @@
               </div>
               <div class="faq__item" style="animation-delay: 0.3s;">
                 <button class="faq__toggler js-faq-toggler">
-                  Сколько стоит участие в мастер-классах?
-                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
-                    <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
+                  Включена ли аренда спортивного оборудования? Можно взять свое?
+                  <div class="faq__icon">
+                    <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
+                    <svg class="faq__minus" width="30" height="5" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-minus"></use>
+                    </svg>
+                  </div>
                 </button>
                 <div class="faq__content">
                   Все активности на&nbsp;фестивале абсолютно бесплатные. Также мы&nbsp;бесплатно предоставляем весь необходимый инвентарь.
@@ -585,11 +635,15 @@
               </div>
               <div class="faq__item" style="animation-delay: 0.4s;">
                 <button class="faq__toggler js-faq-toggler">
-                  Во&nbsp;сколько можно приходить?
-                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
-                    <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
+                  будут ли раздевалки для участников забега?
+                  <div class="faq__icon">
+                    <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
+                    <svg class="faq__minus" width="30" height="5" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-minus"></use>
+                    </svg>
+                  </div>
                 </button>
                 <div class="faq__content">
                   Площадка фестиваля работает ежедневно с&nbsp;11:00 до&nbsp;21:00. Вы&nbsp;можете прийти в&nbsp;любое время в&nbsp;этом интервале.
@@ -597,11 +651,15 @@
               </div>
               <div class="faq__item" style="animation-delay: 0.5s;">
                 <button class="faq__toggler js-faq-toggler">
-                  Как добраться до площадки фестиваля?
-                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
-                    <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
+                  Есть ли на фестивале фудкорт?
+                  <div class="faq__icon">
+                    <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
+                    <svg class="faq__minus" width="30" height="5" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-minus"></use>
+                    </svg>
+                  </div>
                 </button>
                 <div class="faq__content">
                   Фестиваль проходит в&nbsp;парке &laquo;Музеон&raquo;. Добраться можно на&nbsp;личном автомобиле и&nbsp;припарковаться на&nbsp;платной городской парковке, на&nbsp;такси (подъезд со&nbsp;стороны&nbsp;ул. Крымский Вал). Также можно доехать на&nbsp;метро. Ближайшие станции&nbsp;&mdash; &laquo;Парк Культуры&raquo; и&nbsp;&laquo;Октябрьская&raquo;.
@@ -609,11 +667,15 @@
               </div>
               <div class="faq__item" style="animation-delay: 0.6s;">
                 <button class="faq__toggler js-faq-toggler">
-                  Есть ли на фестивале фудкорт?
-                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5555 9.00006L24.3055 17.264L15.5555 25.5278" stroke="currentColor"/>
-                    <circle cx="17.5" cy="17.5" r="17" stroke="currentColor"/>
+                  что делать, если я опаздываю на зарегистрированное событие?
+                  <div class="faq__icon">
+                    <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-plus"></use>
                     </svg>
+                    <svg class="faq__minus" width="30" height="5" role="img" aria-label="skate">
+                      <use xlink:href="img/sprite.svg#icon-minus"></use>
+                    </svg>
+                  </div>
                 </button>
                 <div class="faq__content">
                   На&nbsp;территории парка работает множество кафе на&nbsp;любой вкус, где вы&nbsp;всегда можете перекусить и&nbsp;согреться горячими напитками.
@@ -621,11 +683,57 @@
               </div>
             </div>
           </div>
+          <div class="marquee marquee--red2 faq__marquee"></div>
         </section>
-      </main>
-      <footer class="footer" id="footer">
+        <footer class="footer" id="footer">
+          <div class="footer__bg"></div>
+          <div class="container footer__container">
+            <h2 class="title footer__title">Контакты</h2>
+            <div class="footer__wrapper">
+              <div class="footer__smi">
+                <h5 class="footer__subtitle">Для сми</h5>
+                <a class="footer__press-link" href="mailto:pressa-moscowsport@yandex.ru">pressa-moscowsport@yandex.ru</a>
+                <p>Для аккредитации на событие отправьте письмо на электронный адрес со следующей информацией:</p>
+                <ul>
+                  <li>название СМИ и программы, планируемая дата выхода материала;</li>
+                  <li>ФИО корреспондента / всех участников съемочной группы с контактными телефонами.</li>
+                </ul>
+              </div>
+              <div class="footer__about">
+                <ul class="footer__pins">
+                  <li class="footer__pin">
+                    <div class="footer__pin-icon">
+                      <svg width="20" height="20" role="img" aria-label="calendar">
+                        <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                      </svg>
+                    </div>
+                    <span>4 февраля 2023</span>
+                  </li>
+                  <li class="footer__pin">
+                    <div class="footer__pin-icon">
+                      <svg width="16" height="20" role="img" aria-label="calendar">
+                        <use xlink:href="img/sprite.svg#icon-pin"></use>
+                      </svg>
+                    </div>
+                    <span>Лужники, Южное спортивное ядро</span>
+                  </li>
+                  <li class="footer__pin">
+                    <div class="footer__pin-icon">
+                      <svg width="20" height="20" role="img" aria-label="calendar">
+                        <use xlink:href="img/sprite.svg#icon-time"></use>
+                      </svg>
+                    </div>
+                    <span>С 10:00 до 21:00</span>
+                  </li>
+                </ul>
+                <a href="#" class="footer__policy-link">Политика конфиденциальности</a>
+              </div>
+            </div>
+          </div>
 
-      </footer>
+        </footer>
+      </main>
+
 
 
 
