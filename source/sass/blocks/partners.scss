@@ -1,14 +1,66 @@
 .partners {
   padding: 21.2rem 0 0;
 
+  @media (max-width: $mobile) {
+    padding: 92px 0 0;
+
+    .container {
+      padding: 0;
+    }
+  }
+
   &__title {
+    margin: 0;
+  }
+
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     margin: 0 0 6.5rem;
+
+    @media (max-width: $mobile) {
+      padding: 0 20px;
+      margin: 0 0 20px;
+    }
+
+
+    svg {
+      display: none;
+      fill: $white;
+      width: 20px;
+      height: 20px;
+      margin: 0 4px 11px 0;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
   }
 
   &__logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 20px;
+
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+      display: none;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0 20px;
+      flex-wrap: nowrap;
+
+    }
   }
 
   &__logo-hover {
@@ -21,6 +73,10 @@
     left: -6.5rem;
     transition: 0.2s opacity ease-in-out;
     z-index: 0;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
 
     .partners__logo--dep & {
       top: -6rem;
@@ -51,6 +107,10 @@
   &__logo {
     position: relative;
 
+    @media (max-width: $mobile) {
+      flex-shrink: 0;
+    }
+
     &:hover {
       .partners__logo-hover {
         opacity: 1;
@@ -61,7 +121,14 @@
   &__logo-image {
     position: relative;
     z-index: 5;
+
+    @media (max-width: $mobile) {
+      height: 47px;
+      width: auto;
+    }
   }
+
+
 
 
 

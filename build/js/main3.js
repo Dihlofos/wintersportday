@@ -101,7 +101,7 @@
 (function () {
   new Swiper(".js-slider", {
     // Optional parameters
-    loop: true,
+    loop: false,
     slidesPerView: 'auto',
     speed: 1000,
     pagination: {
@@ -115,6 +115,7 @@
       320: {
         slidesPerView: 1,
         spaceBetween: 0,
+        loop: true,
       },
 
       768: {
@@ -125,6 +126,7 @@
       1025: {
         slidesPerView: 'auto',
         spaceBetween: 43,
+        loop: false,
       },
     },
   });

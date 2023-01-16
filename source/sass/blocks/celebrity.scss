@@ -10,10 +10,16 @@
 
     @media (max-width: $mobile) {
       margin: 0 0 34px;
+      padding: 0 0 0 20px;
     }
   }
 
   .container {
     overflow: hidden;
+
+    @media (max-width: $mobile) {
+      padding: 0;
+
+    }
   }
 }

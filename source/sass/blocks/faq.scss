@@ -3,7 +3,7 @@
   padding: 18.5rem 0 8.2rem;
 
   @media (max-width: $mobile) {
-    padding: 79px 0 30px;
+    padding: 102px 0 63px;
   }
 
   &__title {
@@ -11,8 +11,8 @@
 
     @media (max-width: $mobile) {
       font-weight: 500;
-      font-size: 30px;
-      line-height: 36px;
+      font-size: 40px;
+      line-height: 1;
       margin: 0 0 30px;
     }
   }
@@ -29,10 +29,10 @@
     }
 
     @media (max-width: $mobile) {
-      padding: 0 0 20px;
+      padding: 0 0 16px;
 
       &:first-child {
-        padding: 20px 0 20px;
+        padding: 14px 0 18px;
       }
     }
   }
@@ -54,9 +54,11 @@
     padding: 0;
 
     @media (max-width: $mobile) {
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 27px;
+      line-height: 1.1;
+      text-align: left;
       align-items: flex-start;
+      gap: 10px;
     }
 
     &.active {
@@ -70,11 +72,6 @@
 
     }
 
-    @media (max-width: $tablet) {
-      font-size: 16px;
-      line-height: 19px;
-      text-align: left;
-    }
   }
 
   &__icon {
@@ -115,5 +112,13 @@
   &__marquee {
     margin: 20.5rem 0 0;
     transform: rotate(4.92deg);
+
+    @media (max-width: $mobile) {
+      margin: 97px 0 0;
+
+      &:after {
+        background-size: 255px;
+      }
+    }
   }
 }

@@ -419,7 +419,7 @@
                 </svg>
               </button>
             </div>
-            <div class="container">
+            <div class="container2">
               <div class="swiper-container js-slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide js-slide slider__slide">
@@ -464,8 +464,10 @@
                       <p>подпись участника</p>
                     </div>
                   </div>
-
-
+                  <div class="swiper-slide js-slide slider__slide swiper-slide-last">
+                    <div class="slider__slide-inner">
+                    </div>
+                  </div>
                 </div>
                 <!-- <div class="location__pagination swiper-pagination"></div> -->
               </div>
@@ -496,7 +498,12 @@
         <section class="run" id="run">
           <div class="container">
             <h2 class="run__title title">Зимний забег</h2>
-            <img class="run__image" width="1400" height="473" src="img/run-image.jpg" alt="" >
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/run-image-mobile.jpg" />
+              <source media="(min-width: 768px)" srcset="img/run-image.jpg" />
+              <img class="run__image" width="1400" height="473" src="img/run-image.jpg" alt="Зимний забег" >
+            </picture>
+
             <div class="run__wrapper">
               <div class="run__content">
                 <p class="run__description">
@@ -505,7 +512,7 @@
                   Начало&nbsp;&mdash; с&nbsp;10:00.
                 </p>
                 <p class="run__count">Кол-во участников: 1000 человек.</p>
-                <a href="#" class="button run__button">
+                <a href="#" class="button run__button run__button--desktop">
                   Регистрация
                   <svg width="19" height="19" role="img" aria-label="arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow-full"></use>
@@ -530,6 +537,12 @@
                   <span class="run__schedule-name">Награждение участников и победителей</span>
                 </li>
               </ul>
+              <a href="#" class="button run__button run__button--mobile">
+                Регистрация
+                <svg width="19" height="19" role="img" aria-label="arrow">
+                  <use xlink:href="img/sprite.svg#icon-arrow-full"></use>
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -574,7 +587,12 @@
         </section>
         <section class="partners">
           <div class="container">
-            <h2 class="partners__title title">организаторы и парнетры</h2>
+            <div class="partners__header">
+              <h2 class="partners__title title">организаторы и&nbsp;парнетры</h2>
+              <svg width="40" height="40"  role="img" aria-label="skate">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
             <div class="partners__logos">
               <a href="https://www.mos.ru/moskomsport/" class="partners__logo partners__logo--dep" target="_blank">
                 <img class="partners__logo-image" src="img/logo-department.svg" alt="Департамент спорта города Москвы" width="196" height="65">
@@ -605,7 +623,7 @@
             <div class="faq__accordeon">
               <div class="faq__item" style="animation-delay: 0.2s;">
                 <button class="faq__toggler js-faq-toggler">
-                  могут ли принимать участие в активностях дети?
+                  могут&nbsp;ли принимать участие в&nbsp;активностях дети?
                   <div class="faq__icon">
                     <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
@@ -638,7 +656,7 @@
               </div>
               <div class="faq__item" style="animation-delay: 0.4s;">
                 <button class="faq__toggler js-faq-toggler">
-                  будут ли раздевалки для участников забега?
+                  будут&nbsp;ли раздевалки для&nbsp;участников забега?
                   <div class="faq__icon">
                     <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
@@ -654,7 +672,7 @@
               </div>
               <div class="faq__item" style="animation-delay: 0.5s;">
                 <button class="faq__toggler js-faq-toggler">
-                  Есть ли на фестивале фудкорт?
+                  Есть&nbsp;ли на&nbsp;фестивале фудкорт?
                   <div class="faq__icon">
                     <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
@@ -670,7 +688,7 @@
               </div>
               <div class="faq__item" style="animation-delay: 0.6s;">
                 <button class="faq__toggler js-faq-toggler">
-                  что делать, если я опаздываю на зарегистрированное событие?
+                  что делать, если я&nbsp;опаздываю на&nbsp;зарегистрированное событие?
                   <div class="faq__icon">
                     <svg class="faq__plus" width="30" height="30" role="img" aria-label="skate">
                       <use xlink:href="img/sprite.svg#icon-plus"></use>
@@ -681,7 +699,7 @@
                   </div>
                 </button>
                 <div class="faq__content">
-                  На&nbsp;территории парка работает множество кафе на&nbsp;любой вкус, где вы&nbsp;всегда можете перекусить и&nbsp;согреться горячими напитками.
+                  Ответ на поставленный вопрос в этом раскрывающемся окошечке.
                 </div>
               </div>
             </div>

@@ -1,9 +1,27 @@
 .map {
   padding: 16.5rem 0 0;
 
+  @media (max-width: $mobile) {
+    padding: 96px 0 0;
+
+    .container {
+      padding:0;
+    }
+  }
+
+  &__header {
+    @media (max-width: $mobile) {
+      padding: 0 0 0 20px;
+    }
+  }
+
 
   &__title {
     margin: 0 0 1.5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 4px;
+    }
   }
 
   &__description {
@@ -14,6 +32,22 @@
   &__wrapper {
     display: flex;
     justify-content: center;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+      display: none;
+    }
+
+    @media (max-width: $mobile) {
+      justify-content: flex-start;
+      overflow-x: auto;
+      width: 100%;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+    }
   }
 
   &__map {
@@ -21,11 +55,28 @@
     width: 123.2rem;
     height: 78.9rem;
     margin: -10.6rem 0 0;
+
+    @media (max-width: $mobile) {
+      margin: 0;
+      width: 600px;
+      height: 384px;
+      img {
+        max-width: initial;
+        width: 600px;
+        height: 384px;
+      }
+
+    }
   }
 
   &__marquee {
     margin: 19.5rem 0 0;
     transform: rotate(-6deg);
+
+    @media (max-width: $mobile) {
+      margin: 97px 0 0;
+      transform: rotate(-5deg);
+    }
   }
 
   &__pin {

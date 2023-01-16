@@ -1,8 +1,16 @@
 .run {
   padding: 20.7rem 0 0;
 
+  @media (max-width: $mobile) {
+    padding: 78px 0 0;
+  }
+
   &__title {
     margin: 0 0 6.5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 35px;
+    }
   }
 
   &__image {
@@ -12,46 +20,112 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
   }
 
   &__content {
     padding: 3rem 0 0;
     width: 34%;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding: 16px 0 0;
+    }
   }
 
   &__description {
     margin: 0;
     font-size: 2rem;
     line-height: 1.2;
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 1.2;
+    }
   }
 
-  &__schedule {
-    width: 48.5%;
-    font-size: 2rem;
-    line-height: 1.2;
-  }
 
-  &__schedule-time {
-    display: inline-block;
-    margin: 0 5.1rem 0 0;
-  }
+
+
 
   &__count {
     font-size: 2rem;
     color: $lightBlue;
     font-weight: 700;
     margin: 2rem 0 0;
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 1.2;
+      margin: 14px 0 0;
+    }
   }
 
   &__button {
     width: 25.8rem;
     margin: 6rem 0 0;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin: 20px 0 0;
+      max-width: 270px;
+    }
+
+    &--desktop {
+      display: flex;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: flex;
+      }
+    }
   }
 
   &__schedule {
+    width: 48.5%;
+    font-size: 2rem;
+    line-height: 1.2;
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin: 13px 0 0;
+    }
+  }
+
+
+  &__schedule-time {
+    display: inline-block;
+    margin: 0 5.1rem 0 0;
+
+    @media (max-width:$mobile) {
+      margin: 0;
+      width: 40%;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+
+
+  &__schedule-name {
+    @media (max-width:$mobile) {
+      width: 49%;
+      font-size: 12px;
+      line-height: 1.2;
+    }
   }
 
   &__schedule-item {
@@ -60,6 +134,12 @@
 
     &:not(:last-child) {
       border-bottom: 1px solid $white;
+    }
+
+    @media (max-width:$mobile) {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
     }
 
   }

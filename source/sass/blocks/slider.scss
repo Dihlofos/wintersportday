@@ -17,12 +17,17 @@
         width: 31.8rem !important;
         height:  39.1rem !important;
 
+        &.swiper-slide-last {
+          width: 15rem !important;
+        }
+
       @media (max-width: $mobile) {
         width: 100% !important;
         height: auto !important;
 
-        &:last-child {
-          width: 100% !important;
+        &.swiper-slide-last {
+          width: 0 !important;
+          display: none;
         }
       }
     }
@@ -80,6 +85,11 @@
       width: calc((100% - 140rem)/2);
       top: 0;
       padding: 14rem 0 0;
+      cursor: pointer;
+
+      &.swiper-button-disabled {
+        display: none;
+      }
 
       @media (max-width: $mobile) {
         width: 24px;
