@@ -1,6 +1,4 @@
 .nav {
-
-
   &__list {
     display: flex;
     list-style: none;
@@ -23,14 +21,6 @@
 
     &:hover {
       color: $lightBlue;
-    }
-
-    &--blue {
-      color: $lightBlue;
-
-      &:hover {
-        color: $white;
-      }
     }
   }
 
