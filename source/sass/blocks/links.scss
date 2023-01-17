@@ -1,6 +1,10 @@
 .links {
   padding: 19rem 0 0;
 
+  @media (max-width: $tablet) {
+    padding: 90px 0 0;
+  }
+
   @media (max-width: $mobile) {
     padding: 62px 0 0;
   }
@@ -12,7 +16,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
@@ -32,6 +36,7 @@
     line-height: 4.5rem;
     transition: 0.15s color ease-in-out;
 
+
     @media (max-width: $mobile) {
       font-size: 28px;
       line-height: 20px;
@@ -43,6 +48,7 @@
 
     svg {
       fill: currentColor;
+
     }
   }
 
@@ -56,6 +62,14 @@
   }
 
   &__main-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+
+    @media (max-width: $tablet) {
+      width: 32px;
+      height: 32px;
+    }
+
     @media (max-width: $mobile) {
       width: 20px;
       height: 20px;
@@ -86,6 +100,11 @@
     span {
       position: relative;
       z-index: 6;
+    }
+
+    @media (max-width: $tablet) {
+      margin: 80px 0 0;
+      font-size: 18px;
     }
 
     @media (max-width: $mobile) {

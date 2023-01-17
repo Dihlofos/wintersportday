@@ -3,7 +3,7 @@
   &__nav {
     flex-shrink: 0;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       display: none;
     }
   }
@@ -25,7 +25,7 @@
     gap: 5rem;
     width: 45%;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       width: 100%;
     }
   }

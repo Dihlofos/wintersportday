@@ -32,7 +32,7 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="css/style2.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
     <meta property="og:title" content="Зимний день Московского спорта" />
     <meta
@@ -40,7 +40,7 @@
       content=""
     />
     <meta property="og:image" content="img/logo.svg" />
-    <meta property="og:url" content="https://winterday.moscow.sport" />
+    <meta property="og:url" content="https://zima.moscow.sport/" />
     <title>Зимний день Московского спорта</title>
   </head>
 
@@ -80,7 +80,7 @@
                 </li>
                 <li class="nav__item">
                   <a class="nav__link js-scroll" data-scroll href="#exhibit"
-                    >Выставка</a
+                    >Академии</a
                   >
                 </li>
                 <li class="nav__item">
@@ -111,9 +111,23 @@
 
         <section class="hero" id="hero">
           <div class="container">
-            <div class="hero__top">
-              <h2 class="hero__title">Зимний день <img src="img/logo-ornamtent.svg" alt="Лого мосспорта"></h2>
-              <div class="hero__blocks">
+            <div class="hero__wrapper">
+              <div class="hero__top">
+                <h2 class="hero__title">Зимний день <img src="img/logo-ornamtent.svg" alt="Лого мосспорта"></h2>
+                <div class="hero__blocks hero__blocks--desktop">
+                  <div class="hero__block hero__block--red">
+                    Лужники, южное<br> спортивное ядро
+                  </div>
+                  <div class="hero__block hero__block--blue">
+                    4 февраля 2023 г.<br>С 10:00 до 21:00
+                  </div>
+                </div>
+              </div>
+              <div class="hero__bottom">
+                <img src="img/logo-ornamtent.svg" alt="Лого мосспорта">
+                <h2 class="hero__title">Московского спорта</h2>
+              </div>
+              <div class="hero__blocks hero__blocks--mobile">
                 <div class="hero__block hero__block--red">
                   Лужники, южное<br> спортивное ядро
                 </div>
@@ -121,10 +135,6 @@
                   4 февраля 2023 г.<br>С 10:00 до 21:00
                 </div>
               </div>
-            </div>
-            <div class="hero__bottom">
-              <img src="img/logo-ornamtent.svg" alt="Лого мосспорта">
-              <h2 class="hero__title">Московского спорта</h2>
             </div>
           </div>
         </section>
@@ -210,7 +220,7 @@
                     <use xlink:href="img/sprite.svg#icon-medal"></use>
                   </svg>
                   <span class="links__link-text">
-                    Выставка
+                    Академии
                   </span>
                   <svg class="links__arrow" width="19" height="19" role="img" aria-label="arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow-full"></use>
@@ -262,9 +272,9 @@
             <span>Выбирайте | регистрируйтесь и&nbsp;приходите | Вход бесплатный</span>
           </div>
         </section>
-        <section class="skate" id="skate">
+        <section class="skate">
           <div class="container">
-            <h2 class="skate__title title">Каток</h2>
+            <h2 class="skate__title title" id="skate">Каток</h2>
           </div>
           <div class="skate__blocks-container container">
             <ul class="skate__blocks">
@@ -419,7 +429,7 @@
                 </svg>
               </button>
             </div>
-            <div class="container2">
+            <div class="container">
               <div class="swiper-container js-slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide js-slide slider__slide">
@@ -464,10 +474,10 @@
                       <p>подпись участника</p>
                     </div>
                   </div>
-                  <div class="swiper-slide js-slide slider__slide swiper-slide-last">
+                  <!-- <div class="swiper-slide js-slide slider__slide swiper-slide-last">
                     <div class="slider__slide-inner">
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 <!-- <div class="location__pagination swiper-pagination"></div> -->
               </div>
@@ -476,13 +486,12 @@
 
 
         </section>
-        <section class="infoblock" id="exhibit">
+        <section class="infoblock">
           <div class="container">
-            <div class="infoblock__wrapper">
+            <div class="infoblock__wrapper"  id="exhibit">
               <div class="infoblock__content">
-                <h4>Выставка московских академий<br>зимних видов спорта</h4>
-                <p>Выставка академий города, на которой разместятся стенды ведущих спортивных учреждений Москвы. Здесь вы узнаете об их спортивных направлениях, достижениях выпускников, правилах записи. А также сможете пообщаться
-                  с представителями учреждений.</p>
+                <h4>Презентация Московских академий зимних видов спорта</h4>
+                <p>Презентация академий города, на&nbsp;которой разместятся стенды ведущих спортивных учреждений Москвы. Здесь вы&nbsp;узнаете об&nbsp;их&nbsp;спортивных направлениях, достижениях выпускников, правилах записи.</p>
                 <span class="button button--free">Вход свободный</span>
               </div>
               <div class="infoblock__images">
@@ -495,9 +504,9 @@
           </div>
           <div class="marquee infoblock__marquee marquee--blue"></div>
         </section>
-        <section class="run" id="run">
+        <section class="run">
           <div class="container">
-            <h2 class="run__title title">Зимний забег</h2>
+            <h2 class="run__title title" id="run">Зимний забег</h2>
             <picture>
               <source media="(max-width: 767px)" srcset="img/run-image-mobile.jpg" />
               <source media="(min-width: 768px)" srcset="img/run-image.jpg" />
@@ -547,11 +556,11 @@
           </div>
 
         </section>
-        <section class="map" id="map">
+        <section class="map">
           <div class="container">
-            <div class="map__header">
+            <div class="map__header" id="map">
               <h2 class="title map__title">карта с локациями</h2>
-              <div class="map__description">ОК «лужники»</div>
+              <div class="map__description">ОК «Лужники»</div>
             </div>
             <div class="map__wrapper">
               <div class="map__map">
@@ -559,7 +568,7 @@
                 <button class="map__pin map__pin--1 js-pin" data-pin="1">
                   <span class="map__number">1</span>
                   <div class="map__content">
-                    <span>Выставка</span>
+                    <span>Академии</span>
                   </div>
                 </button>
                 <button class="map__pin map__pin--2 js-pin" data-pin="2">
@@ -598,7 +607,7 @@
                 <img class="partners__logo-image" src="img/logo-department.svg" alt="Департамент спорта города Москвы" width="196" height="65">
                 <img class="partners__logo-hover" width="287" height="287" src="img/partners-hover.svg" alt="">
               </a>
-              <a href="https://www.mossport.ru/" class="partners__logo partners__logo--sport" target="_blank">
+              <a href="https://moscow.sport/" class="partners__logo partners__logo--sport" target="_blank">
                 <img class="partners__logo-image" src="img/logo-mossport.svg" alt="Московский спорт" width="227" height="65">
                 <img class="partners__logo-hover" width="287" height="287" src="img/partners-hover.svg" alt="">
               </a>
@@ -606,20 +615,20 @@
                 <img class="partners__logo-image" src="img/logo-hundred.svg" alt="100 лет Московскому спорту" width="234" height="65">
                 <img class="partners__logo-hover" width="287" height="287" src="img/partners-hover.svg" alt="">
               </a>
-              <a href="https://srkvg.ru/" class="partners__logo partners__logo--mountains" target="_blank">
+              <a href="https://srkvg.ru/moskovskaya-zima-na-vorobevyh-gorah/" class="partners__logo partners__logo--mountains" target="_blank">
                 <img class="partners__logo-image" src="img/logo-mountains.svg" alt="Воробьевы горы" width="268" height="46">
                 <img class="partners__logo-hover" width="287" height="287" src="img/partners-hover.svg" alt="">
               </a>
-              <a href="#" class="partners__logo partners__logo--run" target="_blank">
+              <a href="https://ski-biathlon.moscow.sport/" class="partners__logo partners__logo--run" target="_blank">
                 <img class="partners__logo-image" src="img/logo-placeholder.svg" alt="заглушка" width="217" height="19">
                 <img class="partners__logo-hover" width="287" height="287" src="img/partners-hover.svg" alt="">
               </a>
             </div>
           </div>
         </section>
-        <section class="faq" id="faq">
+        <section class="faq">
           <div class="container">
-            <h2 class="faq__title title">Вопросы и ответы</h2>
+            <h2 class="faq__title title" id="faq">Вопросы и ответы</h2>
             <div class="faq__accordeon">
               <div class="faq__item" style="animation-delay: 0.2s;">
                 <button class="faq__toggler js-faq-toggler">

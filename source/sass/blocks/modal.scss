@@ -29,13 +29,11 @@
 
   &__wrapper {
     position: relative;
-    border-radius: 25px;
-    background-color: $white;
     display: flex;
     z-index: 15;
-    width: 140rem;
-    height: 72rem;
-    max-width: 90%;
+    height: auto;
+    width: 90%;
+    max-width: 150rem;
 
     video {
       max-width: 100%;

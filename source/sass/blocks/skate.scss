@@ -91,6 +91,10 @@
     &--image-only {
       padding: 0;
 
+      @media (max-width: $mobile) {
+        display: none;
+      }
+
       img {
         position: absolute;
         top: 0;

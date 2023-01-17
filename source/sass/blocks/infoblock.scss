@@ -27,10 +27,15 @@
     background-repeat: repeat;
     background-color: $red;
 
+    @media (max-width: $tablet) {
+      right: 18px;
+    }
+
     @media (max-width: $mobile) {
       width: 177px;
       height: 177px;
       bottom: 39px;
+      right: 0;
     }
   }
 
