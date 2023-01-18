@@ -60,7 +60,8 @@
 
     @media (max-width: $mobile) {
       height: 434px;
-      width: 100%;
+      width: 320px;
+      max-width: 95%;
     }
   }
 
@@ -81,7 +82,7 @@
 
     @media (max-width: $mobile) {
       padding: 50px 23px 55px 28px;
-      width: 320px;
+      width: 100%;
 
       .button {
         width: 258px;
@@ -104,6 +105,10 @@
         object-fit: cover;
       }
     }
+  }
+
+  &__block-link {
+    max-width: 100%;
   }
 
   &__block-title {
