@@ -1,5 +1,20 @@
 "use strict";
 (function () {
+  let upButton = document.querySelector(".up");
+
+  if (upButton) {
+    window.onscroll = function () {
+      if (window.pageYOffset > 260) {
+        upButton.classList.add("up--shown");
+      } else {
+        upButton.classList.remove("up--shown");
+      }
+    };
+  }
+})();
+
+"use strict";
+(function () {
   const togglers = document.querySelectorAll(".js-faq-toggler");
   if (!togglers.length) return;
 
@@ -76,7 +91,7 @@
   const modalOpen = document.querySelector('.js-modal-open');
   const video = modal.querySelector('video');
 
-  if (!modalClose.length | !modal) {
+  if (!modalClose.length || !modal || !modalOpen) {
     return;
   }
 

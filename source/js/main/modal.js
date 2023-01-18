@@ -6,7 +6,7 @@
   const modalOpen = document.querySelector('.js-modal-open');
   const video = modal.querySelector('video');
 
-  if (!modalClose.length | !modal) {
+  if (!modalClose.length || !modal || !modalOpen) {
     return;
   }
 
