@@ -2,6 +2,10 @@
   position: relative;
   padding: 18.5rem 0 8.2rem;
 
+  .container {
+    display: none;
+  }
+
   @media (max-width: $mobile) {
     padding: 102px 0 63px;
   }
