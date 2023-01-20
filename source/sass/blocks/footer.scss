@@ -160,8 +160,7 @@
   }
 
   &__policy-link {
-    display: none;
-    // display: inline-block;
+    display: inline-block;
     color: $lightBlue;
     padding: 0 0 0.5rem;
     text-decoration: none;
@@ -175,8 +174,7 @@
     }
 
     &--desktop {
-      display: none;
-      //display: inline-block;
+      display: inline-block;
     }
 
     &--mobile {
@@ -191,8 +189,7 @@
       }
 
       &--mobile {
-        display: none;
-        //display: inline-block;
+        display: inline-block;
       }
     }
   }
