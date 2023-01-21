@@ -1,4 +1,4 @@
-### Landing page for snowmoscow fest 2022
+### Landing page for moscow sport winter fest 2023
 
 Simple landing page with simple gulp build
 
