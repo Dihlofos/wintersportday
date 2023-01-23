@@ -1,4 +1,4 @@
-### Landing page for snowmoscow fest 2022
+### Landing page for moscow sport winter fest 2023
 
 Simple landing page with simple gulp build
 
@@ -6,3 +6,5 @@ Simple landing page with simple gulp build
 `npm run build` for build
 
 To see website go to [link](https://dihlofos.github.io/wintersportday/build/)
+
+production [link](https://zima.moscow.sport/)
