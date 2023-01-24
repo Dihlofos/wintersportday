@@ -101,7 +101,23 @@
     background-color: $white;
     padding: 0;
     margin: 0;
+    text-decoration: none;
     border: none;
+
+    &--mobile {
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+
+    &--desktop {
+      @media (max-width: $mobile) {
+        display: none;
+      }
+
+    }
 
     &:after {
       position: absolute;
@@ -147,18 +163,18 @@
     }
 
     &--2 {
-      top: 43.5%;
-      left: 32%;
+      top: 44%;
+      left: 33%;
     }
 
     &--3 {
-      top: 58%;
+      top: 57%;
       left: 30%;
     }
 
     &--4 {
-      top: 6%;
-      left: 37.5%;
+      top: 5%;
+      left: 36.5%;
     }
 
     &--5 {
