@@ -109,6 +109,7 @@
   &__schedule-time {
     display: inline-block;
     width: 28.5%;
+    flex-shrink: 0;
 
     @media (max-width:$mobile) {
       margin: 0;
@@ -131,7 +132,7 @@
   &__schedule-item {
     display: flex;
     font-weight: 700;
-    padding: 3rem 0;
+    padding: 2rem 0;
 
     &:not(:last-child) {
       border-bottom: 1px solid $white;
