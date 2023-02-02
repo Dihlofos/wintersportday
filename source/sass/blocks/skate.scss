@@ -159,6 +159,7 @@
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
+    object-fit: cover;
 
     @media (max-width: $mobile) {
       top: -60px;
