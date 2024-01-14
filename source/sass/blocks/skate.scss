@@ -6,7 +6,6 @@
   @media (max-width: $mobile) {
     padding: 120px 0 0;
 
-
     &--family {
       padding: 84px 0 0;
       margin: 0 0 -190px;
@@ -49,14 +48,13 @@
     }
 
     @media (max-width: $mobile) {
-
       .skate--family & {
         height: 707px;
         padding: 60px 20px 96px 20px;
       }
+
       position: relative;
       height: auto;
-
       flex-wrap: nowrap;
       width: 100%;
       height: auto;
@@ -65,8 +63,6 @@
       overflow-x: auto;
       padding: 60px 20px 0 20px;
       gap: 20px;
-
-
     }
   }
 
@@ -192,18 +188,19 @@
   }
 
   &__location {
-    font-size: 1.8rem;
+    font-size: 4rem;
     color: #50c4ff;
-    margin: 0 0 1rem;
+    margin: 0 0 2rem;
 
     @media (max-width: $mobile) {
-      font-size: 14px;
+      font-size: 25px;
+      line-height: 1.2;
     }
 
     svg {
       fill: #50c4ff;
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
     }
   }
 
