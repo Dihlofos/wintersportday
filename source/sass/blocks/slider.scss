@@ -88,6 +88,11 @@
         text-transform: uppercase;
         font-weight: 700;
 
+        span {
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+
         @media (max-width: $mobile) {
           font-size: 20px;
           margin: 22px 0 5px;
