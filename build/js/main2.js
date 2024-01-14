@@ -130,8 +130,8 @@
 (function () {
   new Swiper(".js-slider", {
     // Optional parameters
-    loop: true,
-    slidesPerView: 'auto',
+    loop: false,
+    slidesPerView: "auto",
     speed: 1000,
     pagination: {
       el: ".swiper-pagination",
@@ -159,24 +159,23 @@
   });
 
   if (isTouchDevice()) {
-    const slides = document.querySelectorAll('.js-slider .swiper-slide');
-    slides.forEach((slide)=>{
-      slide.addEventListener('click', ()=>{
-        slide.classList.toggle('hover');
-      })
-    })
-
-} else {
+    const slides = document.querySelectorAll(".js-slider .swiper-slide");
+    slides.forEach((slide) => {
+      slide.addEventListener("click", () => {
+        slide.classList.toggle("hover");
+      });
+    });
+  } else {
     return;
-}
+  }
 
-function isTouchDevice() {
-    return (('ontouchstart' in window) ||
-        (navigator.maxTouchPoints > 0) ||
-        (navigator.msMaxTouchPoints > 0));
-}
-
-
+  function isTouchDevice() {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  }
 })();
 
 "use strict";
