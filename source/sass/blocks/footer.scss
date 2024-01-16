@@ -48,6 +48,9 @@
   }
 
   &__smi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 58.3rem;
 
 
