@@ -26,6 +26,8 @@
     }
   }
 
+
+
   &__content {
     padding: 3rem 0 0;
     width: 34%;
@@ -68,6 +70,8 @@
     width: 25.8rem;
     margin: 6rem 0 0;
 
+
+
     @media (max-width: $mobile) {
       width: 100%;
       margin: 20px 0 0;
@@ -89,6 +93,10 @@
         display: flex;
       }
     }
+  }
+
+  &__block-link {
+    width: auto;
   }
 
   &__schedule {
