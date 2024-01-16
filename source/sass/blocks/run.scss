@@ -70,12 +70,10 @@
     width: 25.8rem;
     margin: 6rem 0 0;
 
-
-
     @media (max-width: $mobile) {
       width: 100%;
       margin: 20px 0 0;
-      max-width: 270px;
+      font-size: 16px;
     }
 
     &--desktop {
